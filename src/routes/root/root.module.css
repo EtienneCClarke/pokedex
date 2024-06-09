@@ -1,0 +1,64 @@
+.container {
+    margin: 5rem 5rem 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.header img:hover {
+    animation: shake 1s forwards;
+}
+
+.title {
+    margin-bottom: 5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.pagination__controls {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@keyframes shake {
+    10% { transform: rotate(-10deg); }
+    30% { transform: rotate(10deg); }
+    40% { transform: rotate(0deg); }
+    45% { transform: rotate(-2deg); }
+    50% { transform: rotate(0deg); }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        margin: 2.5rem 2.5rem 5rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    .pagination__controls {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 1rem 1rem 2rem 1rem;
+    }
+}

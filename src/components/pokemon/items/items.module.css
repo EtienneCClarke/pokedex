@@ -1,0 +1,35 @@
+.title {
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.label {
+    opacity: 0.6;
+}
+
+.items__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 125px);
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.item__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid hsl(var(--foreground) / 0.2);
+    border-radius: 0.4rem;
+    aspect-ratio: 1 / 1;
+}
+
+.item_img {
+    width: 60px;
+}
+
+.name {
+    text-transform: capitalize;
+    text-align: center;
+}

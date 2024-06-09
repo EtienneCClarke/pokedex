@@ -1,0 +1,4 @@
+.chevron {
+    fill: hsl(var(--foreground));
+    max-height: 10px;
+}

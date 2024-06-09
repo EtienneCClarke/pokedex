@@ -1,0 +1,12 @@
+.back_button {
+    text-decoration: none;
+    color: hsl(var(--foreground));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    fill: hsl(var(--foreground));
+    width: 1.5rem;
+}

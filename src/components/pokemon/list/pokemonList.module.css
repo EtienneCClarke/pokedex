@@ -1,0 +1,83 @@
+.pokemon_list__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 1rem;
+}
+
+.pokemon_list__error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 5rem;
+}
+
+.link {
+
+    position: relative;
+    border-radius: 0.4rem;
+    padding-top: 1rem;
+    padding-inline: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--colour);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    background: linear-gradient(111.04deg, #191919 -67.37%, rgba(25, 25, 25, 0.1) 99.74%);
+    border: 1px solid hsl(var(--foreground) / 0.1);
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: 100ms;
+}
+
+.link:hover {
+    border-color: hsl(var(--foreground) / 0.3);
+    scale: 1.1;
+}
+
+.link p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.loading {
+    position: relative;
+}
+
+.loading:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../../assets/spinner.png") center;
+    width: 50px;
+    filter: saturate(0) invert(1);
+    aspect-ratio: 1 / 1;
+    animation: spinner 2s forwards infinite ease-in-out;
+}
+
+.loading_name {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background: rgba(25, 25, 25, 0.5);
+}
+
+.loading .link {
+    opacity: 0.5;
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+@keyframes spinner {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}

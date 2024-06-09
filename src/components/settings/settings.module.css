@@ -1,0 +1,23 @@
+.trigger {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    background: hsl(var(--background));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: 50ms;
+    z-index: 9997;
+}
+
+.trigger:hover {
+    border: 2px solid hsl(var(--foreground) / 0.4);
+}
+
+.trigger_svg {
+    fill: hsl(var(--foreground));
+}
